@@ -23,11 +23,13 @@ public class AbstracttMethod {
 	public void waitforappear(By findBy)
 	{
 		w.until(ExpectedConditions.visibilityOfElementLocated(findBy));
+		System.out.println("Wait for element to appear");
 	}
 	
 	public void waitforElement(WebElement ele)
 	{
 		w.until(ExpectedConditions.visibilityOf(ele));
+		System.out.println("Wait for element");
 	}
 	
 	public void invisibleElement(WebElement ele)
